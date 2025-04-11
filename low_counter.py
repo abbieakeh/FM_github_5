@@ -3,13 +3,13 @@
 def count_low(item_list):
     count = 0
     for item in item_list:
-        if item_list < 10:
+        if item < 10:  # Compare each item, not the list itself
             count += 1
     return count
 
 # Testing
 test_list = [1, 3, 5, 12, 15, 8, 2]
 number_low = count_low(test_list)
-report = "Found " + count_low + " items less than 10."
+report = "Found " + str(number_low) + " items less than 10."  # Convert number to string
 
 print(report)
